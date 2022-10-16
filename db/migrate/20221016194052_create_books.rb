@@ -3,7 +3,7 @@ class CreateBooks < ActiveRecord::Migration[7.0]
     create_table :books do |t|
       t.string :title
       t.text :description
-      t.integer :likes
+      t.integer :likes, default: 0
 
       t.timestamps
     end
